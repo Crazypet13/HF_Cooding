@@ -5,16 +5,15 @@
     Return a new array of sorted numbers.
 */
 
-let numbers = Array [1,2,3,52,32,8,16,4265,252];
+let numbers = [1,2,3,52,32,8,16,4265,252,-52,-1];
 
 function sorter (input_array){
-    if(input_array.length()===0 || input_array.type() === NaN || input_array.type() === null){
+    if(input_array.length ===0 || input_array.typeof === NaN || input_array.typeof === null){
         return let = []; 
     }else{
-        console.log(input_array.sort());
+        return input_array.sort((a, b) => a - b);
     }
     
 };
-sajt
 
 sorter(numbers);
