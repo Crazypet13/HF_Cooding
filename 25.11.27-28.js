@@ -19,16 +19,21 @@ function sorter (input_array){
 sorter(numbers);
 
 Create a function that takes an array of non-negative integers and strings and return a new array without the strings.
-*/
+
 // for loop with if else(or elvis what is less line) in it so you check for all the type of the arrays objects if its not number ,and dont add it in a returning value
 // using array filter give it so only return is its a number and || bigger then 0 *** 
 let box = [1, 2, "aasf", "1", "123", 123];
 
-only_positive = (input_arrey) => {
-    input_arrey.filter(()=>(value),value.typeof === Number);
-}
-/*gpt sayso :/ dont working to
+only_positive = (input_arrey) => input_arrey.filter(value => typeof value === "number");
+
+
+gpt say so :/ dont working to well it didnt xD now it do
+
+const getNumbers = (input_arrey) => input_arrey.filter(item => typeof item === "number" && !isNaN(item));
+
  const getNumbers = arr =>
-  arr.filter(item => typeof item === "number" && !isNaN(item));
-*/
+arr.filter(item => typeof item === "number" && !isNaN(item));
+
 console.log(only_positive(box));
+
+*/
